@@ -17,12 +17,13 @@ class ProstagesController extends AbstractController
     }
 
     /**
-     * @Route("/entreprises", name="entreprises")
+     * @Route("/entreprises/{idEntreprise}", name="entreprises")
      */
-    public function entreprises(): Response
+    public function entreprises($idEntreprise): Response
     {
         return $this->render('prostages/entreprises.html.twig', [
             'controller_name' => 'ProstagesController',
+            'idEntreprise' => $idEntreprise,
         ]);
     }
 

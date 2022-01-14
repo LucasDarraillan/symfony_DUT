@@ -1,6 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-entreprises
+{% block title %}Entreprise{{ idEntreprise }}{% endblock %}
 
+{% block body %}
+<h1>Détails de l'entreprise {{ idEntreprise }}</h1>
+
+<p>
+    Cette page présentera bientôt les détails de l'entreprise {{ idEntreprise }}.
+</p>
 {% endblock %}
